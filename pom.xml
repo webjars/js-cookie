@@ -11,15 +11,15 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>js-cookie</artifactId>
-    <version>2.2.2-SNAPSHOT</version>
+    <version>3.0.1-SNAPSHOT</version>
     <name>js-cookie</name>
     <description>WebJar for js-cookie</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>2.2.0</upstream.version>
-        <upstream.url>https://cdn.jsdelivr.net/npm/js-cookie@${upstream.version}/src</upstream.url>
+        <upstream.version>3.0.1</upstream.version>
+        <upstream.url>https://github.com/js-cookie/js-cookie/releases/download/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -68,6 +68,8 @@
                                 <mkdir dir="${destDir}" />
                                 <get src="${upstream.url}/js.cookie.js" dest="${destDir}" />
                                 <get src="${upstream.url}/js.cookie.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/js.cookie.mjs" dest="${destDir}" />
+                                <get src="${upstream.url}/js.cookie.min.mjs" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>

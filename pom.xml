@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>js-cookie</artifactId>
-    <version>3.0.1</version>
+    <version>3.0.2-SNAPSHOT</version>
     <name>js-cookie</name>
     <description>WebJar for js-cookie</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/js-cookie</url>
         <connection>scm:git:https://github.com/webjars/js-cookie.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/js-cookie.git</developerConnection>
-        <tag>js-cookie-3.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <build>
